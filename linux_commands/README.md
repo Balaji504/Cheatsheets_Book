@@ -60,7 +60,43 @@ cd name\ with \ spaces
 
 Write the first characters in the name and then hit the TAB-key.
 
-.................
+**CTRL+A and CTRL+E**
+
+Used to jump to the beginning or the end of the line in the terminal. You can also use *HOME* and *END*.
+
+**CTRL+K**
+
+Used to cut or delete everything after the cursor.
+
+**CTRL+W**
+
+Used to cut or ersasethe whole line.
+
+**CTRL+Y**
+
+Used to paste the command you cut with *CTRL+K* or *CTRL+W*
+
+### Terminal history
+
+You can use the command *history* to show all the commands you have used
+
+```
+history n
+```
+Where n is and optional argument that represents the number of commands you want to list. You can type *!n* to show the -nth command. Use *!!* to show the latest used command. You can also use *!-n* to choose a specific command that isn't the latest.
+
+You can use for example *!cd* to show the last command that begins with cd.
+
+**CTRL+R**
+
+Used to make a reversed search in the history. If you want to repeat what you wrote the last time you used the command cat you would type:
+
+```
+[CTRL+R] cat
+```
+
+Then you can write you search and use *CTRL+R* to step backwards among the search result. Then use *RETURN* to run the command.
+
 
 ## Help
 
