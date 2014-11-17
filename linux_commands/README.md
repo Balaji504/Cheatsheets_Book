@@ -136,6 +136,26 @@ Then you can write you search and use *CTRL+R* to step backwards among the searc
 
 ### Apt-get (Debian and Ubuntu)
 
+### DPKG (Debian and Ubuntu)
+
+Install a package
+
+```
+sudo dpkg -i packagefile.deb
+```
+
+List installed packages
+
+```
+sudo dpkg -l [optional pattern]
+```
+
+Remove an installed package
+
+```
+sudo dpkg -r packagename
+```
+
 ### Yum (Fedora, RedHat, openSUSE)
 
 ## Manage filetree
@@ -475,6 +495,14 @@ Then you can write you search and use *CTRL+R* to step backwards among the searc
 **sftp**
 
 **scp**
+Used to send/retrieve files to/from a remote host.
+
+* -P: Port
+
+Example command
+```
+scp -P 22 filetoupload.tar.gz remoteuser@server.domain.com:/home/remoteuser
+```
 
 **rsync**
 
@@ -513,6 +541,22 @@ Then you can write you search and use *CTRL+R* to step backwards among the searc
 ## Archive and compress files
 
 ### tar
+
+* -c: Create archive
+* -f: Archive filename
+* -v: Verbose i.e display progress while creating archive
+* -x: Extract files
+* -z: Compress archive using gzip program
+
+Compress example
+```
+tar -zcvf example.tar.gz /home/exampleuser/example-folder
+```
+
+Uncompress example
+```
+tar -zxvf example.tar.gz
+```
 
 ...
 
