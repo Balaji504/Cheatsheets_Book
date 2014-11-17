@@ -485,6 +485,12 @@ sudo dpkg -r packagename
 ### Remote administration
 
 **ssh**
+* -p: Port on the remote host
+
+Example command
+```
+scp -p 22 remoteuser@remotehost.domain.com
+```
 
 **screen**
 
