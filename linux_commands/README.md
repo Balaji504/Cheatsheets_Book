@@ -615,6 +615,11 @@ svn merge ^/Misc/trunk/Test
 svn merge --reintegrate svn://server/Misc/branches/Test2
 ```
 
+**Remove bransch**
+```
+svn rm svn://server/Misc/branches/Test2
+```
+
 ## Schedule commands
 
 ### One-time event
