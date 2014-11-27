@@ -516,6 +516,14 @@ scp -P 22 filetoupload.tar.gz remoteuser@server.domain.com:/home/remoteuser
 **wget**
 
 **curl**
+curl is a client to get files from servers using any of the supported protocols. The command is designed to work without user interaction or any kind of interactivity.
+
+curl offers a busload of useful tricks like proxy support, user authentication, ftp upload, HTTP post, file transfer resume and more.
+
+Example command
+```
+curl -d @filename "http://example.com/api/endpoint"
+```
 
 **lynx**
 
