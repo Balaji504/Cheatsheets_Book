@@ -486,10 +486,11 @@ sudo dpkg -r packagename
 
 **ssh**
 * -p: Port on the remote host
+* -X: To open windows on your computer
 
 Example command
 ```
-scp -p 22 remoteuser@remotehost.domain.com
+ssh -p 22 remoteuser@remotehost.domain.com
 ```
 
 **screen**
@@ -575,6 +576,36 @@ tar -zxvf example.tar.gz
 ### Zip
 
 ### Unzip
+
+## Version Control
+
+### Subversion
+
+Arguments
+* --username followed by the username. e.g '--username User1'
+
+^ = The head of the repo. e.g. ''^/Misc' is the same as 'svn://server/Misc'
+
+
+**Checkout**
+```
+svn co svn://server/Misc/trunk/Test
+```
+
+**Create a new branch**
+```
+svn copy svn://server/Misc/trunk/Test svn://server/Misc/branches/Test2
+```
+
+**Import changes from trunk**
+```
+svn merge ^/Misc/trunk/Test
+```
+
+**Reintegrate to trunk**
+```
+svn merge --reintegrate svn://server/Misc/branches/Test2
+```
 
 ## Schedule commands
 
