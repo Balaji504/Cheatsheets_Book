@@ -561,7 +561,9 @@ curl -d @filename "http://example.com/api/endpoint"
 * -f: Archive filename
 * -v: Verbose i.e display progress while creating archive
 * -x: Extract files
-* -z: Compress archive using gzip program
+
+* -j: Filter archive through bzip2
+* -z: Filter archive through gzip
 
 Compress example
 ```
