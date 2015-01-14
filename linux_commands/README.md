@@ -438,6 +438,16 @@ sudo dpkg -r packagename
 
 **fgrep**
 
+### PDF-documents
+
+**pdftk**
+Used to unite PDF-documents
+
+Example command
+```
+pdftk input1.pdf input2.pdf input3.pdf cat output output.pdf
+```
+
 ## Math tools
 
 **units**
