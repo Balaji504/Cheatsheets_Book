@@ -433,6 +433,16 @@ sudo dpkg -r packagename
 ### Search and find text in files
 
 **grep**
+Used to search for text snippets in files.
+
+Flags:
+* -A: How many lines should be included after the matched text
+* -B: How many lines should be included before the matched text
+
+Example command
+```
+cat tmp.txt | grep -A 5 -B 5 "search phrase"
+```
 
 **rgrep**
 
