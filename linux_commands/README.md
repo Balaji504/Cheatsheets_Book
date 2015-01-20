@@ -479,6 +479,12 @@ pdftk input1.pdf input2.pdf input3.pdf cat output output.pdf
 **traceroute**
 
 **tcpdump**
+tcpdump is a common packet analyzer that runs under the command line. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached.
+
+Example command
+```
+sudo tcpdump port 80 -s 0 -w capture.cap
+```
 
 **nmap**
 
