@@ -621,3 +621,12 @@ tar -zxvf example.tar.gz
 ### Shell
 
 ### Other
+
+## MySQL ##
+
+### Import dump ###
+
+Import to an existing local database
+```
+sudo mysql -u root -p -h localhost DATABASE_NAME < data.sql
+```
