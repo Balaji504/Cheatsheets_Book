@@ -433,10 +433,30 @@ sudo dpkg -r packagename
 ### Search and find text in files
 
 **grep**
+Used to search for text snippets in files.
+
+Flags:
+* -A: How many lines should be included after the matched text
+* -B: How many lines should be included before the matched text
+
+Example command
+```
+cat tmp.txt | grep -A 5 -B 5 "search phrase"
+```
 
 **rgrep**
 
 **fgrep**
+
+### PDF-documents
+
+**pdftk**
+Used to unite PDF-documents
+
+Example command
+```
+pdftk input1.pdf input2.pdf input3.pdf cat output output.pdf
+```
 
 ## Math tools
 
@@ -459,6 +479,12 @@ sudo dpkg -r packagename
 **traceroute**
 
 **tcpdump**
+tcpdump is a common packet analyzer that runs under the command line. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached.
+
+Example command
+```
+sudo tcpdump port 80 -s 0 -w capture.cap
+```
 
 **nmap**
 
@@ -486,10 +512,11 @@ sudo dpkg -r packagename
 
 **ssh**
 * -p: Port on the remote host
+* -X: To open windows on your computer
 
 Example command
 ```
-scp -p 22 remoteuser@remotehost.domain.com
+ssh -p 22 remoteuser@remotehost.domain.com
 ```
 
 **screen**
@@ -560,7 +587,9 @@ curl -d @filename "http://example.com/api/endpoint"
 * -f: Archive filename
 * -v: Verbose i.e display progress while creating archive
 * -x: Extract files
-* -z: Compress archive using gzip program
+
+* -j: Filter archive through bzip2
+* -z: Filter archive through gzip
 
 Compress example
 ```
@@ -583,6 +612,41 @@ tar -zxvf example.tar.gz
 ### Zip
 
 ### Unzip
+
+## Version Control
+
+### Subversion
+
+Arguments
+* --username followed by the username. e.g '--username User1'
+
+^ = The head of the repo. e.g. ''^/Misc' is the same as 'svn://server/Misc'
+
+
+**Checkout**
+```
+svn co svn://server/Misc/trunk/Test
+```
+
+**Create a new branch**
+```
+svn copy svn://server/Misc/trunk/Test svn://server/Misc/branches/Test2
+```
+
+**Import changes from trunk**
+```
+svn merge ^/Misc/trunk/Test
+```
+
+**Reintegrate to trunk**
+```
+svn merge --reintegrate svn://server/Misc/branches/Test2
+```
+
+**Remove bransch**
+```
+svn rm svn://server/Misc/branches/Test2
+```
 
 ## Schedule commands
 
