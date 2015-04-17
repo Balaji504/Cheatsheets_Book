@@ -23,7 +23,11 @@ GROUP BY table_schema;
 
 ### Percona Toolkit
 
+http://www.percona.com/software/percona-toolkit
+
 **pt-archiver**
+
+http://www.percona.com/doc/percona-toolkit/2.2/pt-archiver.html
 
 Archive rows from a MySQL table into another table or a file. It could also delete them directly.
 
@@ -35,6 +39,8 @@ Benefits:
 * Easier backups
 
 **pt-duplicate-key-checker**
+
+http://www.percona.com/doc/percona-toolkit/2.2/pt-duplicate-key-checker.html
 
 Find duplicate indexes and foreign keys on MySQL tables.
 * Remove useless indexes, safely
@@ -49,6 +55,8 @@ pt-duplicate-key-checker --host=localhost --databases=db1,db2 --user=root --pass
 
 **pt-mysql-summary**
 
+http://www.percona.com/doc/percona-toolkit/2.2/pt-mysql-summary.html
+
 Summarize MySQL information nicely.
 
 * MySQL tricorder
@@ -61,6 +69,8 @@ pt-mysql-summary --user=root --password=secret
 ```
 
 **pt-online-schema-change**
+
+http://www.percona.com/doc/percona-toolkit/2.2/pt-online-schema-change.html
 
 ALTER table without locking them.
 
@@ -78,6 +88,8 @@ Flags:
 
 **pt-query-digest**
 
+http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html
+
 Analyze MySQL queries from logs, processlist, and tcpdump
 
 * Find slow queries
@@ -91,7 +103,21 @@ Benefits:
 pt-query-digest /var/log/mysql/mysql-slow.log
 ```
 
+**pt-stalk**
+
+http://www.percona.com/doc/percona-toolkit/2.2/pt-stalk.html
+
+Collect forensic data about MySQL when problems occur.
+
+* Postmortem analysis of MySQL problem
+
+Benefits:
+* Never sleeps, so you can
+* Collects a lot of vital data
+
 **pt-summary**
+
+http://www.percona.com/doc/percona-toolkit/2.2/pt-summary.html
 
 Summarize system information nicely.
 
@@ -103,3 +129,30 @@ Benefits:
 ```
 pt-summary
 ```
+
+**pt-table-checksum**
+
+http://www.percona.com/doc/percona-toolkit/2.2/pt-table-checksum.html
+
+Verify MySQL replication integrity.
+
+* Find slaves with incorrect data
+
+Benefits:
+* Important knowledge for very little effort
+* Knowing a problem exists is the first step towards fixing it
+
+**pt-table-sync**
+
+http://www.percona.com/doc/percona-toolkit/2.2/pt-table-sync.html
+
+Synchronize MySQL table data efficiently.
+
+* Fix slaves with incorrect data
+
+Benefits:
+* Easily fix problems found by pt-table-checksum
+
+**pt-visual-explain**
+
+http://www.percona.com/doc/percona-toolkit/2.2/pt-visual-explain.html
