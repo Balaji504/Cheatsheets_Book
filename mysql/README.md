@@ -37,6 +37,19 @@ GROUP BY table_schema;
 * If lookup doesn't start from the leftmost side of the indexed columns
 * You can't skip columns in the index
 
+## Optimizations
+
+### Column selectivity
+
+In general you should use the column with the highest selectivity first in the index and queries.
+
+```sql
+SELECT COUNT(DISTINCT staff_id)/COUNT(*) AS staff_id_selectivity,
+COUNT(DISTINCT customer_id)/COUNT(*) AS customer_id_selectivity,
+COUNT(*)
+FROM payment
+```
+
 ## Tools
 
 ### Percona Toolkit
