@@ -19,6 +19,24 @@ FROM information_schema.TABLES
 GROUP BY table_schema;
 ```
 
+## Index
+
+### B-Tree
+
+**Strengths**
+
+* Match the full value
+* Match a leftmost prefix
+* Match a column prefix
+* Match a range of values
+* Match one part exactly and match a range on another part
+* Index-only queries
+
+**Weaknesses**
+
+* If lookup doesn't start from the leftmost side of the indexed columns
+* You can't skip columns in the index
+
 ## Tools
 
 ### Percona Toolkit
