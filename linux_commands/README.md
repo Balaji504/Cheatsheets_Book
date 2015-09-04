@@ -479,12 +479,21 @@ pdftk input1.pdf input2.pdf input3.pdf cat output output.pdf
 **traceroute**
 
 **tcpdump**
+
 tcpdump is a common packet analyzer that runs under the command line. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached.
 
 Example command
 ```
 sudo tcpdump port 80 -s 0 -w capture.cap
 ```
+
+**-c count**
+
+Exit after receiving count packets.
+
+**-C file_size**
+
+Before writing a raw packet to a savefile, check whether the file is currently larger than file_size and, if so, close the current savefile and open a new one. Savefiles after the first savefile will have the name specified with the -w flag, with a number after it, starting at 1 and continuing upward. The units of file_size are millions of bytes (1,000,000 bytes, not 1,048,576 bytes).
 
 **nmap**
 
