@@ -484,7 +484,7 @@ tcpdump is a common packet analyzer that runs under the command line. It allows 
 
 Example command
 ```
-sudo tcpdump port 80 -s 0 -w capture.cap
+sudo tcpdump -w capture.cap -C 1 port 80
 ```
 
 **-c count**
