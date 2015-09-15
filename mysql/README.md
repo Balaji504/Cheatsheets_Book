@@ -2,13 +2,17 @@
 
 ## Basics
 
-### Import dump ###
+### Export database
+
+mysqldump -u [uname] -p[pass] db_name > db_backup.sql
+
+### Import dump
 
 Import to an existing local database
 ```
 sudo mysql -u root -p -h localhost DATABASE_NAME < data.sql
 ```
-### Show the size of the databases ###
+### Show the size of the databases
 
 ```
 SELECT table_schema "Data Base Name",
