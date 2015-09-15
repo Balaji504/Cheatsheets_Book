@@ -4,7 +4,9 @@
 
 ### Export database
 
+```
 mysqldump -u [uname] -p[pass] db_name > db_backup.sql
+```
 
 ### Import dump
 
