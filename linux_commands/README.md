@@ -136,6 +136,10 @@ Then you can write you search and use *CTRL+R* to step backwards among the searc
 
 ### Apt-get (Debian and Ubuntu)
 
+```
+sudo apt-get --download-only upgrade
+```
+
 ### DPKG (Debian and Ubuntu)
 
 Install a package
