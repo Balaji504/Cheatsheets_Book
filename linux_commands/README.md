@@ -532,6 +532,13 @@ Example command
 ssh -p 22 remoteuser@remotehost.domain.com
 ```
 
+To generate and start using ssh key auth
+
+```
+ssh-keygen -t rsa
+ssh-copy-id user@123.45.56.78
+```
+
 **screen**
 
 ### Internet software
