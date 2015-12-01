@@ -138,6 +138,8 @@ Flags:
 
 https://www.percona.com/doc/percona-toolkit/2.2/pt-query-advisor.html
 
+*Removed in 2.1 in favour of the web version: https://tools.percona.com/query-advisor/*
+
 **pt-query-digest**
 
 http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html
