@@ -25,7 +25,7 @@ FROM information_schema.TABLES
 GROUP BY table_schema;
 ```
 
-## Index
+## Indexing
 
 ### B-Tree
 
@@ -43,7 +43,18 @@ GROUP BY table_schema;
 * If lookup doesn't start from the leftmost side of the indexed columns
 * You can't skip columns in the index
 
-## Optimizations
+## Schema Optimizations
+
+## Query Optimizations
+
+### Access types
+
+**Slowest last**
+
+1. Single value access (constants)
+2. Range accesses (range scan)
+3. Scanning an index (index scans)
+4. Scanning a table (full table scan)
 
 ### Column selectivity
 
