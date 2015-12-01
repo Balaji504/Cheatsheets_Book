@@ -134,6 +134,10 @@ Flags:
   Test before the real run
 * execute
 
+**pt-query-advisor**
+
+https://www.percona.com/doc/percona-toolkit/2.2/pt-query-advisor.html
+
 **pt-query-digest**
 
 http://www.percona.com/doc/percona-toolkit/2.2/pt-query-digest.html
