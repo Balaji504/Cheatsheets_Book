@@ -69,6 +69,12 @@ FROM payment
 
 ## Tools
 
+### MySQL Slap
+
+```
+sudo mysqlslap --user=sysadmin --password --host=localhost  --concurrency=20 --number-of-queries=1000 --create-schema=employees --query="/mysqlslap_tutorial/select_query.sql" --delimiter=";" --verbose --iterations=2 --debug-info
+```
+
 ### Percona Toolkit
 
 http://www.percona.com/software/percona-toolkit
